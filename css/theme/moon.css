@@ -4,6 +4,7 @@
  */
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(../../lib/font/rbn/rbn.css);
 /**
  * Solarized colors by Ethan Schoonover
  */
@@ -12,11 +13,11 @@ html * {
   rendering-intent: auto; }
 
 /*********************************************
- * GLOBAL STYLES
+ * GLOBAL STYLES  #002b36;
  *********************************************/
 body {
-  background: #002b36;
-  background-color: #002b36; }
+  background: rgba(16,34,61,0.9);
+  background-color: rgba(16,34,61,0.9); }
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -54,7 +55,7 @@ body {
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
 

@@ -4341,25 +4341,29 @@
 
 		}
 
+		function log(k){
+			console.log('key', k);
+		}
+
 		// 2. System defined key bindings
 		if( triggered === false ) {
 
 			// Assume true and try to prove false
 			triggered = true;
-
+			log(event.keyCode);
 			switch( event.keyCode ) {
 				// p, page up
 				case 80: case 33: navigatePrev(); break;
 				// n, page down
 				case 78: case 34: navigateNext(); break;
 				// h, left
-				case 72: case 37: navigateLeft(); break;
+				case 72: case 37: case 40: navigateLeft(); break;
 				// l, right
-				case 76: case 39: navigateRight(); break;
+				case 76: case 39: case 38: navigateRight(); break;
 				// k, up
-				case 75: case 38: navigateUp(); break;
+				// case 75: case 38: navigateUp(); break;
 				// j, down
-				case 74: case 40: navigateDown(); break;
+				// case 74: case 40: navigateDown(); break;
 				// home
 				case 36: slide( 0 ); break;
 				// end
